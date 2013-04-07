@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+  <servlet>
+    <servlet-name>UserInfoManage</servlet-name>
+    <servlet-class>com.windy.zfxy.user.control.UserInfoManage</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>EduManage</servlet-name>
+    <servlet-class>com.windy.zfxy.edu.control.EduManage</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>UserInfoManage</servlet-name>
+    <url-pattern>/usm.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EduManage</servlet-name>
+    <url-pattern>/edu.do</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+    <!-- Encoding Fileter -->
+  <filter> 
+	<filter-name>Set Character Encoding</filter-name> 
+	<filter-class>com.windy.zfxy.utils.SetCharacterEncodingFiter</filter-class> 
+  </filter> 
+  <filter-mapping> 
+	<filter-name>Set Character Encoding</filter-name> 
+	<url-pattern>/*</url-pattern> 
+  </filter-mapping> 
+    <!-- Login Fileter -->
+    <filter>
+	<filter-name>loginFilter</filter-name>
+	<filter-class>com.windy.zfxy.utils.LoginFilter</filter-class>
+</filter>
+	<filter-mapping>
+		<filter-name>loginFilter</filter-name>
+		<url-pattern>/page/manage/*</url-pattern>
+	</filter-mapping>
+
+    
+  <!-- FCK Editor -->
+  	 <servlet>
+      <servlet-name>ConnectorServlet</servlet-name>
+        <servlet-class>
+      com.windy.zfxy.fck.ConnectorServlet
+      </servlet-class>
+      <load-on-startup>1</load-on-startup>
+    </servlet>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.windy.zfxy.login.Login</servlet-class>
+  </servlet>
+
+
+    <servlet-mapping>
+      <servlet-name>ConnectorServlet</servlet-name>
+      <url-pattern>
+        /fckeditor/editor/filemanager/connectors/*
+      </url-pattern>
+    </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/login.do</url-pattern>
+  </servlet-mapping>
+      <!-- FCK Editor -->
+  	
+  	<error-page>
+ 	<error-code>404</error-code>
+ 	<location>/error.jsp</location>
+ </error-page>
+ <error-page>
+ 	<error-code>500</error-code>
+ 	<location>/busy.jsp</location>
+ </error-page>
+  	
+</web-app>

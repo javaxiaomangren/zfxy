@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="zfxy"
+  id="myeclipse.1302704565781"
+  context-root="/zfxy"
+  j2ee-spec="5.0"
+  archive="zfxy.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

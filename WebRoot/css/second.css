@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+
+.content{
+	width:960px;
+	height:719px;
+}
+
+.content_right{
+	width:740px;
+	height:620px;
+	background:url(../images/content_right.jpg) no-repeat;
+	float:right;
+	margin-top:50px;
+	padding-top:30px;
+	padding-left:20px;
+}
+.content_right .borderHead1{
+	width:710px;
+	height:25px;
+	text-align:center;
+	color:#000;
+	font-size:18px;
+	padding-top:5px;
+	font-weight:normal;
+}
+.borderHead1_bottom{
+	font-weight:normal;
+	width:710px;
+	hieght:20px;
+	font-size:12px;
+	text-align:center;
+    border-bottom:#CCC solid 2px;
+}
+
+#textContent{
+	font-size:12px;
+	color:#000;
+	font-weight:normal;
+	padding-top: 10px;
+}
+
+.content_right .borderHead2{
+	width:500px;
+	height:40px;
+	text-align:center;
+	color:#000;
+	font-size:18px;
+	font-weight:normal;
+}
+.content_right .rightkuang{
+	width:700px;
+	padding-left:10px;
+	color:#000;
+	font-size:24px;
+	font-weight:bold;
+	height:546px;
+}
+.cls {
+	clear: both;
+}
+a:focus { outline: none; }
+
+.xgsm {
+	padding: 0px;
+	width: 200px;
+	float:left;	
+	margin-top:50px;
+}
+.menu {
+	width: 200px;
+	height:500px;
+}
+
+#menu2 {
+	padding: 0px;
+	height: 73px;
+	width: 200px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#menu2 ul {
+	padding: 0;
+	list-style: none;
+	font-size: 1.1em;
+	width: 200px;
+	margin-top: 15px;
+	margin-right: 0;
+	margin-bottom: 50px;
+	margin-left: 0;
+}
+#menu2 ul li {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	float: left;
+	height: 73px;
+	width: 193px;
+	display: block;
+	text-align: center;
+}
+#menu2 ul li a, #menu2 ul li span {
+	float: left;
+	text-decoration: none;
+	color: #F00;
+	clear: both;
+	width: 100%;
+	height: 73px;
+	line-height: 20px;
+	padding-top:24px;
+	font-size:20px;
+}
+#menu2 ul li a{
+color: #FFF;
+margin-top:-47px;
+background: transparent url(../images/button_2.jpg) repeat-x left bottom;
+background-position: left bottom;
+line-height:65px;
+}
+#menu2 ul li span {
+background: transparent url(../images/button_1.jpg) repeat-x left top;
+background-position: left top;
+}
+.rightkuang td a{
+	color:#000;
+	font-size:16px;
+	line-height:20px;
+	font-weight:normal;
+}
+.rightkuang td a:hover{
+	color:#000;
+	font-size:16px;
+	text-decoration:underline;
+}
+.date{
+	color:#CCC;
+	font-size:16px;
+}

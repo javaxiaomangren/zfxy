@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+
+#frameContent{ 
+    width:710px;                             
+    height:610px;                                  
+    font-size:12px; 
+    line-height:18px;
+    overflow-pageINdex:hidden; 
+    overflow-y:hidden; 
+    word-break:break-all;
+	color:#333;
+	font-weight:bold;
+}
+#frameContent2{ 
+    width:710px;                             
+    height:640px;                                  
+    font-size:12px; 
+    line-height:18px;
+    overflow-pageINdex:hidden; 
+    overflow-y:hidden; 
+    word-break:break-all;
+	color:#333;
+	font-weight:bold;
+}
+#frameContent  a,#frameContent2 a{                         
+    font-size:12px; 
+    line-height:18px;
+	color:#333;
+}
+#frameContent  a:hover,#frameContent2 a:hover{                         
+    font-size:16px; 
+    line-height:21px;
+	color:#F00;
+	text-decoration:underline;
+} 
+#pages{
+	float:right;
+	font-size:14px;
+	height:20px;
+	line-height:18px;
+	margin-top:14px;
+	margin-right:15px;
+}
+#pages a{ 
+	font-weight:bolder;
+    font-size:14px;
+	color:#999;
+    text-decoration:underline;
+	padding-left:3px;
+} 
+#pages a:hover{ 
+    font-size:14px;
+	color:#F00;
+    text-decoration:underline; 
+} 
+
+
+#pageInfo{
+	float:right;
+	font-size:14px;
+	height:10px;
+	line-height:18px;
+	margin-top:10px;
+	margin-right:15px;
+}
+
+#pageInfo a{
+	font-weight:bolder;
+    font-size:14px;
+	color:#999;
+    text-decoration:underline;
+	padding-left:3px;
+}
+
+#pageInfo a:hover{
+	font-size:14px;
+	color:#F00;
+    text-decoration:underline; 
+}
+
+
+
+.right_list{
+	width:700px;
+	height:150px;
+	border-bottom:#999 2px solid;
+	padding-bottom:10px;
+	margin-top:10px;
+}
+.right_list .content{
+	 float:left; width:500px; font-size: 12px; height:150px;
+}
+
+.jianjie{
+	width:500px;
+	height:70px;
+	overflow:hidden;
+}
+#viewAll{
+width:100px;
+float:right;
+color:#AA061D;
+text-align:center;
+}
+#viewAll a{
+	color:#AA061D;	
+	font-size:12px;
+}
+#viewAll a:hover{
+	color:#AA061D;
+	font-size:16px;
+}
+
+.dowloadContext{
+width:700px;
+height:560px;
+
+}
+
+.dowloadContext table tr td{
+	height:24px;
+	line-height:24px;
+	border-bottom:#CCC 2px dotted;
+}
